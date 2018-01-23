@@ -6,61 +6,75 @@
 
 body {
 background: #dfdfdf;
+
+	font-family: 'Ubuntu';
 }
 
 .container{
-	/*background: #afafaf;*/
+	background: #afafaf;
 	width: 80%;
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
+	text-align: justify;
 }
 
 header {
 	font-size: 14px;
-	font-family: 'Ubuntu';
 	background: #648cff;
 	height: 40px;
 	width: 100%;
 }
 
 .logo {
+	font-weight: bold;
 	display: inline-block;
 	line-height: 40px;
 	font-size: 18px;
 	color: #fff;
-	width: 25%;
+	width: 27%;
 }
 
 .nav	{
-	/*background: orange;*/
-	display: inline-block;
-	position: relative;
+	background: orange;
+	
+	display: inline-flex;
+	justify-content: space-between;
+
+	vertical-align: top;
 	height: 100%;
-	width: 40%;
-	margin-left: 4%;
+	width: 46%;
+	text-align: justify;
 }
+
+.nav ul {
+	justify-content: space-between;
+
+}
+
+.nav ul, .nav li {
+	list-style: none;
+	color: #fff;
+	font-size: 0;
+	height: 100%;
+	line-height: 40px;
+	display: inline-block;
+}
+
+
 
 .nav a {
 	text-decoration: none;
-	color: #fff;
 	font-size: 14px;
-	height: 100%;
-	margin-right: 15%;
-	line-height: 40px;
-}
-
-.nav a:last-of-type {
-margin-right: 0;
+	color: #fff;
 }
 
 .social {
-	position: absolute;
 	right: 0;
-	/*background: purple;*/
+	background: purple;
 	display: inline-block;
 	margin-right: 0;
-	width: 20%;
+	width: 27%;
 	height: 100%;
 	padding-right: 0;
 }
@@ -86,3 +100,24 @@ margin-right: 0;
 
 
 
+/*first-screen*/
+
+.first-screen {
+	font-size: 14px;
+	background: #648cff;
+	width: 100%;
+}
+
+.left_block {
+	margin-top: 30%;
+}
+
+.first-screen .text .first {
+	font-size: 30px;
+	color: #fff;
+}
+
+.first-screen .text .second {
+	font-size: 20px;
+	color: #fff;
+}
