@@ -6,14 +6,14 @@
 }
 
 body {
-background: #dfdfdf;
-
+background: #fff;
+height: 2000px;
 	font-family: 'Ubuntu';
 }
 
 .container{
 	/*background: #afafaf;*/
-	width: 60%;
+	width: 70%;
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -141,7 +141,7 @@ header {
 
 .background-shit{
 	position: absolute;
-	bottom: -70px;
+	bottom: -45px;
 	width: 100%;
 	height: 100%;
 	z-index: -1;
@@ -154,7 +154,7 @@ header {
 
 .background-shit-another {
 	position: absolute;
-	bottom: -70px;
+	bottom: -44px;
 	width: 100%;
 	height: 100%;
 	z-index: -2;
@@ -231,5 +231,72 @@ header {
 
 .first-screen .scroll {
 	text-align: center;
-	transform: scale(.9);
+	margin-top: 35px;
+	transform: scale(.8);
 }
+
+
+/*Features*/
+
+
+
+
+.block-top {
+	display: block;
+	padding-top: 150px;
+	padding-bottom: 120px;
+	margin: 0 auto;
+	
+}
+
+.block-top h1 {
+	font-size: 30px;
+	color: #648cff;
+	text-align: center;
+	font-style: bold;
+}
+
+.block-top p {
+	font-size: 16px;
+	padding-top: 20px;
+	text-align: center;
+	color: #999;
+}
+
+.block-bottom .uni-block {
+	width: 33%;
+}
+
+.block-bottom .pic, .block-bottom .pic svg,.block-bottom .uni-block, .block-bottom .uni-block .text {
+	display: inline-block;
+}
+
+.block-bottom .pic {
+	transform: scale(.8);
+	vertical-align: top;
+}
+
+.block-bottom .uni-block .text h1 {
+	font-size: 18px;
+	color: #000;
+	font-style: bold;
+	vertical-align: top;
+	display: inline-block;
+	width: 111%;
+}
+
+.block-bottom .uni-block .text p {
+	padding-top: 15px;
+	font-size: 11px;
+	color: #aeaeae;
+	display: inline-block;
+	text-align: justify;
+	line-height: 16px;
+}
+
+.block-bottom .uni-block .text {
+	width: 60%;
+}
+
+
+
