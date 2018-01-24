@@ -363,6 +363,17 @@ header {
 	z-index: -1
 }
 
+.widgets .main-block .widgets-row-2 {
+	display: inline-block;
+	background-image: url(Widgets/widget-2.png);
+	width: 370px;
+	height: 659px;
+	position: absolute;
+	left: 29%;
+	z-index: 1;
+	margin: 0 auto;
+}
+
 .widgets .main-block .widgets-row-3 {
 	display: inline-block;
 	background-image: url(Widgets/widget-3.png);
@@ -374,14 +385,102 @@ header {
 	z-index: -1;	
 }
 
-.widgets .main-block .widgets-row-2 {
-	display: inline-block;
-	background-image: url(Widgets/widget-2.png);
-	width: 370px;
-	height: 659px;
-	position: absolute;
-	left: 29%;
-	z-index: 1;
-	margin: 0 auto;
+
+/*Screenshots*/
+
+
+.screenshots {
+	padding-top: 150px;	
+} 
+
+.screenshots .text-block {
+	padding-bottom: 80px;
 }
+
+.screenshots .text-block h1 {
+	font-size: 30px;
+	color: #648cff;
+	text-align: center;
+	font-style: bold;
+}
+
+.screenshots .text-block p {
+	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	text-align: center;
+	color: #999;
+}
+
+
+.screenshots .phone-block {
+	width: 100%;
+}
+
+.screenshots .phone-block .phone {
+	width: 35%;
+	height: 605px;
+	background-image: url(Screenshots/phone-n-circles-1.png); 
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	display: inline-block;
+}
+
+.screenshots .phone-block .info {
+	display: inline-block; 
+	width: 60%;
+	vertical-align: top;
+	padding-left: 15%;
+	padding-top: 10%;
+}
+
+.screenshots .phone-block .info svg {
+	transform: scale(.7);
+}
+
+.screenshots .phone-block .info .text {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.screenshots .phone-block .info .text h1 {
+	font-size: 30px;
+	color: #648cff;
+	font-style: bold;
+	margin-bottom: 5%;
+}
+.screenshots .phone-block .info .text p {
+	font-size: 18px;
+	color: #000;
+	text-align: left;
+}
+
+.screenshots .phone-block .info .tab {
+	width: 40%;
+	height: 70px;
+	background-image: url(Screenshots/tab.png);
+	background-position: top left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.screenshots .phone-block.sun .info {
+	padding-left: 0;
+}
+
+.screenshots .phone-block.sun .info .text p {
+	width: 60%;
+}
+
+.screenshots .phone-block.sun .phone {
+	background-image: url(Screenshots/phone-n-circles-2.png); 
+
+}
+
+.screenshots .phone-block.rain .phone {
+	background-image: url(Screenshots/phone-n-circles-3.png); 
+
+}
+
 
