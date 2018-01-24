@@ -7,7 +7,7 @@
 
 body {
 background: #fff;
-min-height: 3000px;
+min-height: 5000px;
 	font-family: 'Ubuntu';
 }
 
@@ -19,6 +19,11 @@ min-height: 3000px;
 	position: relative;
 	text-align: justify;
 }
+
+
+
+/*Header*/
+
 
 header {
 	font-size: 14px;
@@ -125,6 +130,8 @@ header {
 .social li:last-of-type { 	
 	margin-right: 0;
 }
+
+
 
 
 
@@ -237,9 +244,10 @@ header {
 }
 
 
+
+
+
 /*Features*/
-
-
 
 
 .block-top {
@@ -298,6 +306,10 @@ header {
 .block-bottom .uni-block .text {
 	width: 60%;
 }
+
+
+
+
 
 /*Widgets*/
 
@@ -384,6 +396,9 @@ header {
 	right: 10%;
 	z-index: -1;	
 }
+
+
+
 
 
 /*Screenshots*/
@@ -483,4 +498,58 @@ header {
 
 }
 
+.screenshots .phone-block:last-of-type .phone{
+	height: 450px;	
+}
 
+
+
+/*Reviews*/
+
+.reviews {
+	padding-top: 50px;
+}
+
+.reviews .top-block h1 {
+	font-size: 30px;
+	color: #648cff;
+	text-align: center;
+	font-style: bold;
+}
+
+.reviews .top-block p {
+	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	text-align: center;
+	color: #999;
+}
+
+.reviews .text-block {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	padding-right: 5%;
+}
+
+.reviews .text-block h1 {
+	font-size: 100px;
+	color: #648cff;
+	font-weight: 400;
+	height: 60px;
+}
+
+.reviews .text-block p {
+	display: inline-block;
+	font-size: 18px;
+	color: #000;
+	text-align: left
+}
+
+.reviews .text-block h1:last-of-type {
+	text-align: right;
+}
+
+.reviews .text-block p:last-of-type {
+	padding-top: 5%;
+}
