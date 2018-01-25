@@ -7,7 +7,7 @@
 
 body {
 background: #fff;
-min-height: 5000px;
+min-height: 6000px;
 	font-family: 'Ubuntu';
 }
 
@@ -183,7 +183,7 @@ header {
 
 .first-screen .text {
 	width: 82.051282051%;
-	font-size: 30px;
+	font-size: 40px;
 	color: #fff;
 	margin-top: 140px;
 	font-weight: 700;
@@ -209,7 +209,7 @@ header {
 	font-family: 'Ubuntu';
 	color: #fff;
 	display: inline-block;
-	border-radius: 5px;
+	border-radius: 4px;
 }
 
 .first-screen button:last-of-type {
@@ -499,7 +499,7 @@ header {
 }
 
 .screenshots .phone-block:last-of-type .phone{
-	height: 450px;	
+	min-height: 450px;	
 }
 
 
@@ -508,6 +508,7 @@ header {
 
 .reviews {
 	padding-top: 50px;
+	padding-bottom: 80px;
 }
 
 .reviews .top-block h1 {
@@ -552,4 +553,84 @@ header {
 
 .reviews .text-block p:last-of-type {
 	padding-top: 5%;
+}
+
+
+
+
+/*Downloads*/
+
+.downloads {
+	background-image: url(Downloads/bg-phone.png);
+	background-position: bottom center;
+	background-size: cover;
+	max-height: 466px
+}
+
+.downloads .main-block {
+	display: inline-block;
+	width: 40%;
+	padding-top: 70px;
+	padding-bottom: 60px;
+	vertical-align: top;
+}
+
+.downloads .main-block h1 {
+	font-size: 30px;
+	color: #fff;
+	text-align: left;
+	font-style: bold;
+}
+
+.downloads .main-block p {
+	margin-top: 20px;
+	width: 70%;
+	font-size: 16px;
+	color: #fff;
+	text-align: left;
+	line-height: 20px;
+}
+
+.downloads .main-block .links {
+	margin-top: 20px;
+	height: 45px;
+	width: 60%;
+	position: relative;
+}
+
+.downloads .main-block .links .app-store {
+	background-image: url(Downloads/link-app-store.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 100%;
+	width: 48%;
+}
+
+.downloads .main-block .links .google-play {
+	position: absolute;
+	right: 0;	
+
+	background-image: url(Downloads/link-google-play.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 100%;
+	width: 48%;
+	text-align: right;
+}
+
+
+.downloads .image-block {
+	display: inline-block;
+	width: 60%;
+	padding-left: 10%;
+	height: 400px;
+
+	background-image: url(Downloads/phone-pic.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
