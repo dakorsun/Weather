@@ -7,7 +7,7 @@
 
 body {
 background: #fff;
-min-height: 6000px;
+/*min-height: 6000px;*/
 	font-family: 'Ubuntu';
 }
 
@@ -17,7 +17,6 @@ min-height: 6000px;
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
-	text-align: justify;
 }
 
 
@@ -26,13 +25,12 @@ min-height: 6000px;
 
 
 header {
-	font-size: 14px;
 	background: #648cff;
 	height: 40px;
 	width: 100%;
 }
 
-.logo {
+header .logo {
 	vertical-align: top;
 	font-weight: bold;
 	display: inline-block;
@@ -42,7 +40,7 @@ header {
 	width: 27%;
 }
 
-.logo div {
+header .logo div {
 	vertical-align: top;
 	display: inline-block;
 	line-height: 40px;
@@ -50,7 +48,7 @@ header {
 	color: #fff;
 }
 
-.nav	{
+header .nav	{
 	/*background: orange;*/
 	
 	display: inline-block;
@@ -61,7 +59,7 @@ header {
 	text-align: justify;
 }
 
-.nav:after{
+header .nav:after{
 	content: '';
 	display: inline-block;
 	width: 100%;
@@ -69,19 +67,19 @@ header {
 	font-size: 0;
 }
 
-.nav ul {
+header .nav ul {
 	display: inline-flex;
 	justify-content: space-between;
 	/*text-align: justify;*/
 	margin: 0 auto;
 }
 
-.nav li {
+header .nav li {
 	list-style: none;
 	display: inline-block;
 }
 
-.nav ul, .nav li {
+header .nav ul, .nav li {
 	font-size: 0;
 	height: 100%;
 	line-height: 40px;
@@ -89,7 +87,7 @@ header {
 
 
 
-.nav a {
+header .nav a {
 	text-decoration: none;
 	font-size: 12px;
 	color: #fff;
@@ -98,7 +96,7 @@ header {
 	/*padding: 0 25%;*/
 }
 
-.social {
+header .social {
 	/*background: purple;*/
 	display: inline-block;
 	width: 27%;
@@ -107,7 +105,7 @@ header {
 	vertical-align: top;
 }
 
-.social ul {
+header .social ul {
 	position: absolute;
 	right: 0;
 	
@@ -116,7 +114,7 @@ header {
 	height: 100%;
 }
 
-.social li {
+header .social li {
 	vertical-align: middle;
 	list-style: none;
 	display: inline-block;
@@ -127,7 +125,7 @@ header {
 }
 
 
-.social li:last-of-type { 	
+header .social li:last-of-type { 	
 	margin-right: 0;
 }
 
@@ -633,4 +631,156 @@ header {
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+
+
+/*Footer*/
+
+footer  {
+	background: #353854;
+	height: 300px;
+	width: 100%;
+	padding-top: 60px;
+	
+	position: relative;
+}
+
+footer .menu {
+	height: 40px;
+	width: 100%;
+	padding-bottom: 100px;
+}
+
+footer .logo {
+	vertical-align: top;
+	font-weight: bold;
+	display: inline-block;
+	line-height: 40px;
+	font-size: 0;
+	width: 27%;
+}
+
+footer .logo div p {
+	display: inline-block;
+	color: #fc6a42;
+
+	line-height: 40px;
+	font-size: 14px;
+}
+
+footer .logo div p:first-of-type {
+	color: #648cff;
+	margin-right: 4px;
+}
+
+
+
+footer .nav	{
+	/*background: orange;*/
+	
+	display: inline-block;
+
+	vertical-align: top;
+	height: 100%;
+	width: 46%;
+	text-align: justify;
+}
+
+footer .nav:after{
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 1px;
+	font-size: 0;
+}
+
+footer .nav ul {
+	display: inline-flex;
+	justify-content: space-between;
+	/*text-align: justify;*/
+	margin: 0 auto;
+}
+
+footer .nav li {
+	list-style: none;
+	display: inline-block;
+}
+
+footer .nav ul, .nav li {
+	font-size: 0;
+	height: 100%;
+	line-height: 40px;
+}
+
+
+
+footer .nav a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	/*padding: 0 25%;*/
+}
+
+footer .social {
+	/*background: purple;*/
+	display: inline-block;
+	width: 27%;
+	height: 100%;
+	display: relative;
+	vertical-align: top;
+}
+
+footer .social ul {
+	position: absolute;
+	right: 0;
+	
+	display: inline-block;
+	line-height: 40px;
+	height: 100%;
+}
+
+footer .social li {
+	vertical-align: middle;
+	list-style: none;
+	display: inline-block;
+	height: 23px;
+	width: 16px;
+	margin-right: 30px;
+	line-height: 40px;
+}
+
+
+footer .social li:last-of-type { 	
+	margin-right: 0;
+}
+
+footer .bottom .str {
+	background: #434769;
+	width: 100%;
+	height: 5px;
+}	
+
+footer .bottom p {
+	padding-top: 30px;
+	padding-right: 50px;
+	text-align: right;
+	font-size: 12px;
+	color: #565b87;
+}
+
+footer .btn {
+	position: absolute;
+	right: 5%;
+	bottom: 0;
+	width: 30px;
+	height: 30px;
+	background: #434769;
+	border-radius: 4px 4px 0 0;
+	background-image: url(footer/arrow.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 10px;
 }
