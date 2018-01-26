@@ -56,27 +56,22 @@ header .nav	{
 	vertical-align: top;
 	height: 100%;
 	width: 46%;
-	text-align: justify;
 }
 
-header .nav:after{
-	content: '';
-	display: inline-block;
-	width: 100%;
-	height: 1px;
-	font-size: 0;
-}
 
 header .nav ul {
-	display: inline-flex;
-	justify-content: space-between;
-	/*text-align: justify;*/
+	width: 100%;
+	position: relative;
+	display: inline-block;
 	margin: 0 auto;
 }
 
 header .nav li {
+	width: 25%;
+	border-radius: 3px;
 	list-style: none;
 	display: inline-block;
+	text-align: center;
 }
 
 header .nav ul, .nav li {
@@ -122,6 +117,7 @@ header .social li {
 	width: 16px;
 	margin-right: 30px;
 	line-height: 40px;
+	border-radius: 8px
 }
 
 
@@ -199,7 +195,7 @@ header .social li:last-of-type {
 	width: 27.35042735%;
 	height: 35px;
 	font-size: 12px;
-	outline:inherit;
+	outline:none;
 	border: none;
 	margin-right: 3%;
 	margin-top: 12%;
@@ -338,16 +334,21 @@ header .social li:last-of-type {
 .widgets .main-block {
 	position: relative;
 	width: 100%;
-	height: 659px;
+	min-height: 500px;
 	padding: 0 2%;
 }
 
 .widgets .main-block .button-l {
 	display: inline-block;
-	margin-top: 303.5px;
-	width: 28px;
+	position: absolute;
+	left: 2%;
+	top: 44%;
+	width: 2.5%;
 	height: 52px;
 	background-image: url(Widgets/button-l.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	vertical-align: middle;
 }
 
@@ -355,44 +356,28 @@ header .social li:last-of-type {
 	display: inline-block;
 	position: absolute;
 	right: 2%;
-	top: 303.5px;
-	width: 28px;
+	top: 44%;
+	width: 2.5%;
 	height: 52px;
 	background-image: url(Widgets/button-r.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	vertical-align: middle;
 }
 
-.widgets .main-block .widgets-row-1 {
+.widgets .main-block .widgets-pic {
 	display: inline-block;
-	background-image: url(Widgets/widget-1.png);
-	width: 317px;
-	height: 565px;
-	position: absolute;
-	top: 7.435508346%;
-	left: 10%;
-	z-index: -1
-}
+	background-image: url(Widgets/widgets-pic.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 
-.widgets .main-block .widgets-row-2 {
-	display: inline-block;
-	background-image: url(Widgets/widget-2.png);
-	width: 370px;
-	height: 659px;
-	position: absolute;
-	left: 29%;
-	z-index: 1;
-	margin: 0 auto;
-}
-
-.widgets .main-block .widgets-row-3 {
-	display: inline-block;
-	background-image: url(Widgets/widget-3.png);
-	width: 317px;
-	height: 565px;
-	position: absolute;
-	top: 7.435508346%;
-	right: 10%;
-	z-index: -1;	
+	margin: 0 auto;	
+	width: 70%;
+	margin: 0 16.2%;
+	min-height: 500px;
+	vertical-align: top;
 }
 
 
@@ -562,7 +547,7 @@ header .social li:last-of-type {
 	background-image: url(Downloads/bg-phone.png);
 	background-position: bottom center;
 	background-size: cover;
-	max-height: 466px
+	max-height: 466px;
 }
 
 .downloads .main-block {
@@ -649,7 +634,7 @@ footer  {
 footer .menu {
 	height: 40px;
 	width: 100%;
-	padding-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 footer .logo {
@@ -684,25 +669,19 @@ footer .nav	{
 	vertical-align: top;
 	height: 100%;
 	width: 46%;
-	text-align: justify;
-}
-
-footer .nav:after{
-	content: '';
-	display: inline-block;
-	width: 100%;
-	height: 1px;
-	font-size: 0;
 }
 
 footer .nav ul {
-	display: inline-flex;
-	justify-content: space-between;
-	/*text-align: justify;*/
+	width: 100%;
+	position: relative;
+	display: inline-block;
 	margin: 0 auto;
 }
 
 footer .nav li {
+	width: 25%;
+	border-radius: 3px;
+	text-align: center;
 	list-style: none;
 	display: inline-block;
 }
@@ -783,4 +762,27 @@ footer .btn {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 10px;
+}
+
+
+
+
+
+/*Animation*/
+
+.nav li:hover {
+	transform: scale(1.1);
+	box-shadow:  0 0 10px rgba(0,0,0,0.5);
+	transition: .5s;
+}
+
+.social li:hover {
+	transform: scale(1.1);
+	box-shadow:  0 0 10px rgba(100, 26, 255,0.5);
+	transition: .5s;
+}
+
+.downloads .links div:hover {
+	transform: scale(1.1);
+	transition: .5s;
 }
